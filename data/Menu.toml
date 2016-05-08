@@ -1,0 +1,7 @@
+[about]
+    Name = "About"
+    URL = "/about"
+
+[projects]
+    Name = "Projects"
+    URL = "/project"
