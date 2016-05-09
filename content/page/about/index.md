@@ -2,6 +2,7 @@
 title = "About Brian Coia"
 description = "Web developer, button-pressing enthusiast"
 date = "2016-05-01T14:02:37+02:00"
+slug = "about"
 +++
 
 {{% img src="/media/avatar.png" alt="Brian Coia" class="right avatar" %}}

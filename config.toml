@@ -5,8 +5,8 @@ languageCode = "en-us"
 metaDataFormat = "yaml"
 theme = "ghostwriter"
 
-disqusShortname = "bcoia" # Optional, enable Disqus integration
-googleAnalytics = ""
+disqusShortname = "bcoia"
+googleAnalytics = "UA-29421156-1"
 gravatarHash = "779fbbf06b0fe9ae605e266227387137"
 
 [Author]
@@ -15,6 +15,7 @@ gravatarHash = "779fbbf06b0fe9ae605e266227387137"
     profile = "https://google.com/+briancoia"
 
 [Permalinks]
+    page = "/:slug/"
     post = "/:year/:month/:day/:slug/"
     project = "/project/:slug/"
 
