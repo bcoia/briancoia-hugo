@@ -1,7 +1,7 @@
 +++
-date = "2016-05-05T14:02:37+02:00"
 title = "XIVTrack"
-hidden = true
+description = "Final Fantasy XIV collectable tracking webapp"
+date = "2016-05-05T14:02:37+02:00"
 +++
 
 [XIVTrack](http://xivtrack.sillydicemaze.net) is a tool for tracking the collectables you own in Final Fantasy XIV. Users can currently track minions, mounts and Triple Triad cards. All data is stored client-side, to avoid the need of a user management system.

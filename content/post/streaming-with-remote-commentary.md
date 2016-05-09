@@ -1,6 +1,7 @@
 +++
+title = "Streaming with Remote Commentary"
+description = "An attempt at solving coast-to-coast stream commentary"
 date = "2014-07-31T00:06:43-05:02"
-title = "Streaming With Remote Commentary"
 +++
 
 Streaming with remote commentators sucks.

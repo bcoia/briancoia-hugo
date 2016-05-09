@@ -1,10 +1,12 @@
 +++
-date = "2016-05-01T14:02:37+02:00"
 title = "About Brian Coia"
-hidden = true
+description = "Web developer, button-pressing enthusiast"
+date = "2016-05-01T14:02:37+02:00"
 +++
 
-Hi, I'm Brian! {{% img src="/media/avatar.png" alt="Brian Coia" class="right avatar" %}}
+{{% img src="/media/avatar.png" alt="Brian Coia" class="right avatar" %}}
+
+Hi, I'm Brian!
 
 I'm a recent Computer Science graduate from University of Wisconsin-Parkside. I have been around computers for most of my life, so I may as well make a career out of it, right?
 

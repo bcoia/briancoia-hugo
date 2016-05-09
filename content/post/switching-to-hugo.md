@@ -1,8 +1,7 @@
 +++
-date = "2016-05-05T00:01:44-05:00"
-draft = true
 title = "Switching to Hugo"
-
+description = "Goodbye, Kirby!"
+date = "2016-05-05T00:01:44-05:00"
 +++
 
 It's the year 2016.
