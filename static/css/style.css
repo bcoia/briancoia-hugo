@@ -998,8 +998,7 @@ progress {
     color: #fff
 }
 .main_wrapper>.main_header a:hover {
-    background-color: #DD3A38;
-    color: #212121
+    color: #DD3A38;
 }
 .main_wrapper>.main_content .label:not(a) {
     padding: 2px;
