@@ -373,9 +373,10 @@ table {
 }
 
 .post-stub {
-    border-bottom: 1px dotted $secondary;
+    border-bottom: 1px solid #EEE;
     margin: 0;
     position: relative;
+    font-size: 14px;
 
     &:first-child { padding-top: 0; }
 
@@ -385,12 +386,12 @@ table {
         transition: all 0.2s ease-in-out;
         display: block;
         color: #424242;
-        padding: 20px 5px;
+        padding: 10px 5px;
 
         &:hover {
             background: #FCF5F5;
             color: $primary;
-            padding: 20px 12px;
+            padding: 10px 12px;
 
             .post-stub-tag { background: $primary; }
         }
@@ -408,7 +409,7 @@ table {
 }
 
 .post-stub-title {
-    display: inline-block;
+    display: block;
     margin: 0;
 }
 
@@ -419,8 +420,9 @@ table {
 
 .post-stub-date {
     display: inline-block;
+    color: #999;
 
-    &:before { content: "/ "; }
+    &:after { content: " • "; }
 }
 
 .next-posts-link a,
