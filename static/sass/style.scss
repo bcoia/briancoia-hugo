@@ -370,6 +370,14 @@ table {
 
 .post-list {
     list-style: none;
+    margin-top: 15px;
+}
+
+.post-container,
+.post-list,
+.author-profile {
+    margin-right: 15px;
+    margin-left: 15px;
 }
 
 .post-stub {
@@ -568,10 +576,6 @@ table {
 
     hr { margin: 35px 0; }
 
-    .site-header {
-        padding-top: 40px;
-    }
-
     .site-title {
         float: none;
         margin-bottom: 15px;
@@ -579,11 +583,6 @@ table {
         a {
             float: none;
         }
-    }
-
-    .site-nav-item {
-        display: block;
-        margin: 15px 0;
     }
 
     .post-header {
@@ -620,17 +619,6 @@ table {
     .post-stub-date:before {
         content: "";
         display: block;
-    }
-
-    .post-list {
-        margin-top: 20px;
-    }
-
-    .post-container,
-    .post-list,
-    .author-profile {
-        margin-right: 25px;
-        margin-left: 25px;
     }
 
     .post-tags { width: 100%; }
@@ -688,13 +676,6 @@ table {
         &:after, &:before {
             margin-top: 10px;
         }
-    }
-
-    .post-container,
-    .post-list,
-    .author-profile {
-        margin-right: 15px;
-        margin-left: 15px;
     }
 
     .author-avatar {
