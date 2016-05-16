@@ -6,7 +6,7 @@ html, body {
   height: 100%; }
 
 body {
-  background: #faf9f7;
+  background: #303030;
   color: #424242;
   font-family: "Open Sans", arial, sans-serif;
   font-size: 18px; }
@@ -61,7 +61,7 @@ blockquote {
   margin: 40px 0;
   padding: 5px 30px; }
   blockquote p {
-    color: #AEADAD;
+    color: #777777;
     display: block;
     font-style: italic;
     margin: 0;
@@ -104,7 +104,7 @@ table {
   table td {
     padding: 10px; }
   table tr {
-    border-bottom: 1px dotted #AEADAD; }
+    border-bottom: 1px dotted #777777; }
 
 ::selection {
   background: #FFF5B8;
@@ -145,15 +145,16 @@ table {
   max-width: 889px; }
 
 #wrapper {
+  background: #faf9f7;
   height: auto;
   min-height: 100%;
   /* This must be the same as the height of the footer */
-  margin-bottom: -265px; }
+  margin-bottom: -200px; }
   #wrapper:after {
     content: "";
     display: block;
     /* This must be the same as the height of the footer */
-    height: 265px; }
+    height: 200px; }
 
 .button {
   background: #303030;
@@ -192,7 +193,8 @@ table {
 /* ============================================================ */
 .site-header {
   overflow: auto;
-  text-align: center; }
+  border-top: 3px solid #DD4A38;
+  margin-bottom: 40px; }
 
 .site-title-wrapper {
   display: table;
@@ -201,14 +203,11 @@ table {
 .site-title {
   font-size: 14px;
   font-weight: 600;
-  margin: 0; }
+  margin: 0px 10px 0px 0px; }
   .site-title a {
     background: #dd4a38;
     color: #FEFEFE;
     padding: 5px 10px 6px; }
-    .site-title a:hover {
-      color: #FEFEFE !important;
-      background: #303030; }
 
 .site-logo {
   display: block; }
@@ -217,15 +216,17 @@ table {
 
 .site-nav {
   list-style: none;
-  margin: 28px 0 10px; }
+  margin: 0; }
 
 .site-nav-item {
   display: inline-block;
   font-size: 14px;
-  font-weight: 700;
-  margin: 0 10px; }
+  font-weight: 700; }
+  .site-nav-item a {
+    padding: 5px 10px 6px; }
   .site-nav-item a:hover {
-    color: #424242; }
+    background: #DD4A38;
+    color: #FEFEFE; }
 
 /* ============================================================ */
 /* Post */
@@ -237,17 +238,14 @@ table {
   margin: 0 40px; }
 
 .post-header {
-  border-bottom: 3px solid #303030;
   margin: 0 0 20px;
-  padding: 0 0 20px;
-  text-align: center; }
+  padding: 0 0 20px; }
 
 .post-title,
 .page-title {
-  font-size: 52px;
+  font-size: 42px;
   font-weight: 700;
-  margin: 15px 0;
-  text-align: center; }
+  margin: 0; }
 
 .page-title {
   margin: 15px 40px; }
@@ -255,15 +253,26 @@ table {
 .post-title a {
   color: #303030; }
 
+.post-header p,
+.post-description {
+  display: inline-block;
+  font-size: 16px;
+  margin: 0; }
+
+.post-date {
+  display: inline-block;
+  color: #777777; }
+  .post-date:after {
+    content: " • "; }
+
 .post-date,
 .blog-description {
-  color: #AEADAD;
-  font-size: 14px;
-  font-weight: 600;
+  color: #777777;
+  font-size: 16px;
   line-height: 1; }
   .post-date a,
   .blog-description a {
-    color: #AEADAD; }
+    color: #777777; }
   .post-date a:hover,
   .blog-description a:hover {
     color: #dd4a38; }
@@ -279,7 +288,7 @@ table {
 
 .post-tags,
 .share {
-  color: #AEADAD;
+  color: #777777;
   font-size: 14px; }
   .post-tags span,
   .share span {
@@ -330,7 +339,8 @@ table {
 /* ============================================================ */
 .post-list {
   list-style: none;
-  margin-top: 15px; }
+  margin-top: 15px;
+  border-top: 1px solid #EEEEEE; }
 
 .post-container,
 .post-list,
@@ -339,7 +349,7 @@ table {
   margin-left: 15px; }
 
 .post-stub {
-  border-bottom: 1px solid #EEE;
+  border-bottom: 1px solid #EEEEEE;
   margin: 0;
   position: relative;
   font-size: 14px; }
@@ -378,7 +388,7 @@ table {
 
 .post-stub-date {
   display: inline-block;
-  color: #999; }
+  color: #777777; }
   .post-stub-date:after {
     content: " • "; }
 
@@ -420,7 +430,7 @@ table {
   vertical-align: middle; }
 
 .author-meta {
-  color: #AEADAD;
+  color: #777777;
   font-size: 14px;
   font-weight: 600;
   line-height: 1;
@@ -432,7 +442,7 @@ table {
   .author-meta i {
     margin-right: 8px; }
   .author-meta a {
-    color: #AEADAD; }
+    color: #777777; }
   .author-meta a:hover {
     color: #dd4a38; }
 
@@ -447,7 +457,7 @@ table {
 .footer {
   background: #303030;
   color: #D3D3D3;
-  height: 265px;
+  height: 200px;
   margin-top: 95px;
   overflow: auto; }
   .footer .site-title-wrapper {

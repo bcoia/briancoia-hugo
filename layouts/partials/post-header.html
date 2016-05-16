@@ -1,9 +1,7 @@
 <header class="post-header">
     <h1 class="post-title" itemprop="name headline"><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+    <time class="post-date" datetime="{{ .Date.Format "2006-01-02" }}" itemprop="datePublished">{{ .Date.Format "January 2, 2006" }}</time>
     {{ if .Description }}
         <p class="post-description" itemprop="description">{{ .Description }}</p>
     {{ end }}
-    <p class="post-date">
-        <span><time datetime="{{ .Date.Format "2006-01-02" }}" itemprop="datePublished">{{ .Date.Format "January 2, 2006" }}</time></span>
-    </p>
 </header>

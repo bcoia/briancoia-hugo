@@ -13,7 +13,7 @@ $background: #FAF9F7;
 html, body { height: 100%; }
 
 body {
-    background: $background;
+    background: $secondary;
     color: #424242;
     font-family: "Open Sans", arial, sans-serif;
     font-size: 18px;
@@ -61,7 +61,7 @@ blockquote {
     padding: 5px 30px;
 
     p {
-        color: #AEADAD;
+        color: #777777;
         display: block;
         font-style: italic;
         margin: 0;
@@ -114,7 +114,7 @@ table {
 
     td { padding: 10px; }
 
-    tr { border-bottom: 1px dotted #AEADAD; }
+    tr { border-bottom: 1px dotted #777777; }
 }
 
 ::selection {
@@ -165,16 +165,17 @@ table {
 }
 
 #wrapper {
+    background: $background;
     height: auto;
-        min-height: 100%;
+    min-height: 100%;
     /* This must be the same as the height of the footer */
-    margin-bottom: -265px;
+    margin-bottom: -200px;
 
     &:after {
         content: "";
         display: block;
         /* This must be the same as the height of the footer */
-        height: 265px;
+        height: 200px;
     }
 }
 
@@ -221,7 +222,8 @@ table {
 
 .site-header {
     overflow: auto;
-    text-align: center;
+    border-top: 3px solid #DD4A38;
+    margin-bottom: 40px;
 }
 
 .site-title-wrapper {
@@ -232,14 +234,12 @@ table {
 .site-title {
     font-size: 14px;
     font-weight: 600;
-    margin: 0;
+    margin: 0px 10px 0px 0px;
 
     a {
         background: $primary;
         color: #FEFEFE;
         padding: 5px 10px 6px;
-
-        &:hover { color: #FEFEFE !important; background: $secondary; }
     }
 }
 .site-logo {
@@ -250,16 +250,22 @@ table {
 
 .site-nav {
     list-style: none;
-    margin: 28px 0 10px;
+    margin: 0;
 }
 
 .site-nav-item {
     display: inline-block;
     font-size: 14px;
     font-weight: 700;
-    margin: 0 10px;
 
-    a:hover { color: #424242; }
+    a { 
+        padding: 5px 10px 6px;
+    }
+
+    a:hover {
+        background: #DD4A38;
+        color: #FEFEFE;
+    }
 }
 
 /* ============================================================ */
@@ -271,32 +277,42 @@ table {
 .post-container { margin: 0 40px; }
 
 .post-header {
-    border-bottom: 3px solid $secondary;
     margin: 0 0 20px;
     padding: 0 0 20px;
-    text-align: center;
 }
 
 .post-title,
 .page-title {
-    font-size: 52px;
+    font-size: 42px;
     font-weight: 700;
-    margin: 15px 0;
-    text-align: center;
+    margin: 0;
 }
 
 .page-title { margin: 15px 40px; }
 
 .post-title a { color: #303030; }
 
+.post-header p,
+.post-description {
+    display: inline-block;
+    font-size: 16px;
+    margin: 0;
+}
+
+.post-date {
+    display: inline-block;
+    color: #777777;
+
+    &:after { content: " • "; }
+}
+
 .post-date,
 .blog-description {
-    color: #AEADAD;
-    font-size: 14px;
-    font-weight: 600;
+    color: #777777;
+    font-size: 16px;
     line-height: 1;
 
-    a { color: #AEADAD; }
+    a { color: #777777; }
     a:hover { color: $primary; }
 }
 
@@ -313,7 +329,7 @@ table {
 
 .post-tags,
 .share {
-    color: #AEADAD;
+    color: #777777;
     font-size: 14px;
 
     span { font-weight: 600; }
@@ -371,6 +387,7 @@ table {
 .post-list {
     list-style: none;
     margin-top: 15px;
+    border-top: 1px solid #EEEEEE;
 }
 
 .post-container,
@@ -381,7 +398,7 @@ table {
 }
 
 .post-stub {
-    border-bottom: 1px solid #EEE;
+    border-bottom: 1px solid #EEEEEE;
     margin: 0;
     position: relative;
     font-size: 14px;
@@ -428,7 +445,7 @@ table {
 
 .post-stub-date {
     display: inline-block;
-    color: #999;
+    color: #777777;
 
     &:after { content: " • "; }
 }
@@ -479,7 +496,7 @@ table {
 }
 
 .author-meta {
-    color: #AEADAD;
+    color: #777777;
     font-size: 14px;
     font-weight: 600;
     line-height: 1;
@@ -493,7 +510,7 @@ table {
 
     i { margin-right: 8px; }
 
-    a { color: #AEADAD; }
+    a { color: #777777; }
     a:hover { color: $primary; }
 }
 
@@ -510,7 +527,7 @@ table {
 .footer {
     background: $secondary;
     color: #D3D3D3;
-    height: 265px;
+    height: 200px;
     margin-top: 95px;
     overflow: auto;
 
