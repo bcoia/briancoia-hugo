@@ -26,6 +26,7 @@ gravatarHash = "779fbbf06b0fe9ae605e266227387137"
     intro = true
     headline = "Brian Coia"
     description = "Web developer, button pressing enthusiast"
+    footer = "I write software at <a href='http://glfsi.com'>Great Lakes Fund Solutions</a>. I also manage game servers and a small community at <a href='https://redco.in'>Red Coin</a>. I press a lot of buttons."
     github = "https://github.com/bcoia"
     linkedin = "https://linkedin.com/in/bcoia/"
     gplus = "https://google.com/+briancoia"

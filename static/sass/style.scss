@@ -15,12 +15,13 @@ html, body { height: 100%; }
 body {
     background: $secondary;
     color: #424242;
-    font-family: "Open Sans", arial, sans-serif;
+    font-family: 'Avenir Next', 'HelveticaNeue-Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 18px;
 }
 
 h1, h2, h3, h4, h5, h6 {
     margin-bottom: 20px;
+    font-weight: 600;
 }
 
 h1 { font-size: 26px; }
@@ -38,6 +39,9 @@ p {
 a {
     color: $primary;
     text-decoration: none;
+    -webkit-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+    transition: all 0.1s linear;
 }
 
 ul, ol {
@@ -118,14 +122,14 @@ table {
 }
 
 ::selection {
-    background: #FFF5B8;
-    color: #000;
+    background: lighten($primary, 30%);
+    color: #000000;
     display: block;
 }
 
 ::-moz-selection {
-    background: #FFF5B8;
-    color: #000;
+    background: lighten($primary, 30%);
+    color: #000000;
     display: block;
 }
 
@@ -161,7 +165,7 @@ table {
     margin: 0 auto;
     position: relative;
     width: 100%;
-    max-width: 889px;
+    max-width: 750px;
 }
 
 #wrapper {
@@ -185,14 +189,14 @@ table {
     border-radius: 3px;
     color: #FEFEFE;
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 600;
     padding: 10px 12px;
 
     &:hover { background: $primary; }
 }
 
 .button-square {
-    background: $primary;
+    background: $primary;    
     color: #FFF;
     float: left;
     font-size: 17px;
@@ -239,7 +243,7 @@ table {
     a {
         background: $primary;
         color: #FEFEFE;
-        padding: 5px 10px 6px;
+        padding: 4px 10px;
     }
 }
 .site-logo {
@@ -256,7 +260,7 @@ table {
 .site-nav-item {
     display: inline-block;
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 600;
 
     a { 
         padding: 5px 10px 6px;
@@ -284,7 +288,7 @@ table {
 .post-title,
 .page-title {
     font-size: 32px;
-    font-weight: 700;
+    font-weight: 600;
     margin: 0;
 }
 
@@ -303,7 +307,7 @@ table {
     display: inline-block;
     color: #777777;
 
-    &:after { content: " • "; }
+    &:after { content: " - "; }
 }
 
 .post-date,
@@ -318,8 +322,8 @@ table {
 
 .post-content {
     a:hover {
-        border-bottom: 1px dotted $primary;
-        padding: 0 0 2px;
+        color: darken($primary, 10%);
+        text-decoration: underline;
     }
 
     &:last-child { margin-bottom: 0; }
@@ -391,7 +395,6 @@ table {
 }
 
 .post-container,
-.post-list,
 .author-profile {
     margin-right: 15px;
     margin-left: 15px;
@@ -406,9 +409,6 @@ table {
     &:first-child { padding-top: 0; }
 
     a {
-        -webkit-transition: all 0.2s ease-in-out;
-        -moz-transition: all 0.2s ease-in-out;
-        transition: all 0.2s ease-in-out;
         display: block;
         color: #424242;
         padding: 10px 5px;
@@ -416,7 +416,7 @@ table {
         &:hover {
             background: #FCF5F5;
             color: $primary;
-            padding: 10px 12px;
+            padding: 10px 8px;
 
             .post-stub-tag { background: $primary; }
         }
@@ -447,7 +447,7 @@ table {
     display: inline-block;
     color: #777777;
 
-    &:after { content: " • "; }
+    &:after { content: " - "; }
 }
 
 .next-posts-link a,
@@ -490,7 +490,7 @@ table {
 .author-name {
     display: inline;
     font-size: 52px;
-    font-weight: 700;
+    font-weight: 600;
     text-align: center;
     vertical-align: middle;
 }
@@ -527,15 +527,42 @@ table {
 .footer {
     background: $secondary;
     color: #D3D3D3;
-    height: 200px;
+    min-height: 200px;
     margin-top: 95px;
     overflow: auto;
 
-    .site-title-wrapper { margin: 80px auto 35px; }
+    .footer-description,
+    .footer-links {
+        display: inline-block;
+        color: lighten($secondary, 40%);
+        font-size: 14px;
+        max-width: 350px;
+        margin: 0;
+        line-height: 1.5;
 
-    .site-title a:hover,
+        a {
+            color: lighten($secondary, 60%);
+
+            &:hover { color: $primary; }
+        }
+    }
+
+    .site-title-wrapper {
+        margin: 20px 0 15px;
+        width: 100%;
+    }
+
+    .site-nav-item a {
+        padding: 0 0 0 20px;
+
+        &:hover {
+            background: none;
+            color: $primary;
+        }
+    }
+
     .button-square:hover {
-        background: #121212;
+        background: $primary;
     }
 
     .button-jump-top {
@@ -546,16 +573,16 @@ table {
 }
 
 .footer-copyright {
-    color: #656565;
+    color: lighten($secondary, 20%);
     font-size: 14px;
-    margin: 0;
+    margin: 10px 0;
     text-align: center;
 
     a {
-        color: #656565;
-        font-weight: 700;
+        color: lighten($secondary, 30%);
+        font-weight: 600;
 
-        &:hover { color: #FEFEFE; }
+        &:hover { color: $primary; }
     }
 }
 
@@ -658,11 +685,22 @@ table {
     .footer {
         margin-top: 50px;
     }
+
+    .footer .site-title-wrapper,
+    .footer .site-title-wrapper .right,
+    .footer-description,
+    .footer-links,
+    .footer-copyright {
+        text-align: center !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
 }
 
 @media only screen and (max-width: 400px) {
     .site-header {
-        padding-top: 40px;
+        padding-left: 40px;
+        padding-right: 40px;
     }
 
     .post-title,
