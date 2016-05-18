@@ -49,11 +49,13 @@ ul, ol {
     line-height: 1.4;
     margin: 0 0 20px;
     padding: 0;
+    font-size: 0;
 
     ul, ol { margin: 10px 0 0 20px; }
 
     li {
         margin: 0 0 2px;
+        font-size: 14px;
 
         &:last-of-type { margin-bottom: 0; }
     }
@@ -253,13 +255,14 @@ table {
 
 .site-nav {
     list-style: none;
-    margin: 0;
+    margin: 3px 0 0 0;
 }
 
 .site-nav-item {
     display: inline-block;
     font-size: 14px;
     font-weight: 600;
+    margin-right: 10px;
 
     a { 
         padding: 5px 10px 6px;
@@ -611,6 +614,11 @@ table {
 
 @media only screen and (max-width: 800px) {
     .post-stub-tag { display: none; }
+
+    .site-header {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -628,7 +636,6 @@ table {
 
     .site-title {
         float: none;
-        margin-bottom: 15px;
 
         a {
             float: none;
@@ -690,12 +697,17 @@ table {
 
     .footer {
         margin-top: 50px;
+
+        .site-title {
+            margin-bottom: 15px;
+        }
     }
 
     .footer .site-title-wrapper,
     .footer .site-title-wrapper .right,
     .footer-description,
     .footer-links,
+    .footer-social,
     .footer-copyright {
         text-align: center !important;
         width: 100% !important;
@@ -704,11 +716,6 @@ table {
 }
 
 @media only screen and (max-width: 400px) {
-    .site-header {
-        padding-left: 40px;
-        padding-right: 40px;
-    }
-
     .post-title,
     .page-title,
     .author-name,
