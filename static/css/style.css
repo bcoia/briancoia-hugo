@@ -580,6 +580,10 @@ table {
   .author-profile:after, .author-profile:before {
     margin-top: 20px; }
 
+  .avatar {
+    max-height: 100px;
+    max-width: 100px; }
+
   .post-stub-title {
     display: block; }
 
