@@ -475,6 +475,8 @@ table {
       .footer .footer-description a:hover,
       .footer .footer-links a:hover {
         color: #dd4a38; }
+  .footer .footer-social {
+    padding: 0 20px; }
   .footer .site-title-wrapper {
     margin: 20px 0 15px;
     width: 100%; }
@@ -603,6 +605,8 @@ table {
     margin-top: 50px; }
     .footer .site-title {
       margin-bottom: 15px; }
+    .footer .footer-social {
+      padding: 10px 0; }
 
   .footer .site-title-wrapper,
   .footer .site-title-wrapper .right,

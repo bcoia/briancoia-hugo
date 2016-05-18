@@ -549,6 +549,8 @@ table {
         }
     }
 
+    .footer-social { padding: 0 20px; }
+
     .site-title-wrapper {
         margin: 20px 0 15px;
         width: 100%;
@@ -698,9 +700,9 @@ table {
     .footer {
         margin-top: 50px;
 
-        .site-title {
-            margin-bottom: 15px;
-        }
+        .site-title { margin-bottom: 15px; }
+
+        .footer-social { padding: 10px 0; }
     }
 
     .footer .site-title-wrapper,
