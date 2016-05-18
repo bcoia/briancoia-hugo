@@ -1,0 +1,13 @@
+<div class="post-content clearfix" itemprop="articleBody">
+    {{ with .Params.Image }}
+        <img class="post-featured-image" src="{{ . }}">
+    {{ end }}
+
+    {{ .Summary }}
+
+    {{ if .Truncated }}
+    <div class="read-more-link">
+        <a href="{{ .RelPermalink }}">Read more <i class="fa fa-caret-right"></i></a>
+    </div>
+    {{ end }}
+</div>

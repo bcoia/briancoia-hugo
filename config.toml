@@ -35,7 +35,7 @@ gravatarHash = "779fbbf06b0fe9ae605e266227387137"
 
 [[menu.main]]
     name = "Blog"
-    url = "/"
+    url = "/post/"
     weight = 1
 
 [[menu.main]]
