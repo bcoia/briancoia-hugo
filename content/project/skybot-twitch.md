@@ -2,6 +2,7 @@
 title = "Skybot Twitch plugin"
 description = "Unfurl Twitch URLs"
 date = "2014-02-20T12:00:00+02:00"
+tags = ["bots", "python"]
 +++
 
 [Skybot](https://github.com/rmmh/skybot) is an extensible Python-based IRC bot. This Skybot plugin unfurls Twitch URLs with title, game, status and viewers.

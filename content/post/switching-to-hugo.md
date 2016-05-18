@@ -2,6 +2,7 @@
 title = "Switching to Hugo"
 description = "Goodbye, Kirby!"
 date = "2016-05-05T00:01:44-05:00"
+tags = ["web"]
 +++
 
 It's the year 2016.

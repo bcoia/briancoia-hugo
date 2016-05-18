@@ -2,6 +2,7 @@
 title = "Ticket Portlet"
 description = "Student project: Ticket portlet for an agricultural firm's support portal"
 date = "2012-12-21T12:00:00+02:00"
+tags = ["web", "java", "student"]
 +++
 
 For a Software Engineering project at [University of Wisconsin-Parkside](https://uwp.edu), I created JSP-based ticketing software for a local agricultural firm for use in their WebSphere intranet portal. This project was featured in the UWP Computer Science 2013 and 2014 showcases.

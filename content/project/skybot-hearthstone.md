@@ -2,6 +2,7 @@
 title = "Skybot Hearthstone plugin"
 description = "Search for Hearthstone cards"
 date = "2014-08-16T12:00:00+02:00"
+tags = ["bots", "python"]
 +++
 
 [Skybot](https://github.com/rmmh/skybot) is an extensible Python-based IRC bot. This Skybot plugin queries a local Hearthstone JSON database (provided by [hearthstonejson.com](hearthstonejson.com)) for a given card name and returns information. Returns closest match for partial names.

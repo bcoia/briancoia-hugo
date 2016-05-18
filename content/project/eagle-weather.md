@@ -2,6 +2,7 @@
 title = "Eagle Weather"
 description = "Student project: Eagle Spring Lake's local weather site"
 date = "2013-12-23T12:00:00+02:00"
+tags = ["web", "php", "student"]
 +++
 
 [EagleWeather.com](http://eagleweather.com) is the result of a few semesters worth of group and solo work for Software Engineering courses at [University of Wisconsin-Parkside](https://uwp.edu).
