@@ -150,7 +150,7 @@ table {
 #wrapper {
   background: #faf9f7;
   height: auto;
-  min-height: 100%;
+  min-height: 85%;
   /* This must be the same as the height of the footer */
   margin-bottom: -200px; }
   #wrapper:after {
@@ -172,16 +172,15 @@ table {
 
 .button-square {
   background: #dd4a38;
-  color: #FFF;
-  float: left;
-  font-size: 17px;
-  margin: 0 0 0 10px;
-  padding: 3px 8px 4px; }
+  color: #FEFEFE;
+  font-size: 16px;
+  padding: 3px 8px; }
   .button-square:hover {
     background: #303030; }
 
 .error {
-  text-align: center; }
+  text-align: center;
+  margin-top: 150px; }
 
 .comments {
   margin-top: 10px; }
@@ -477,12 +476,17 @@ table {
     margin: 20px 0 15px;
     width: 100%; }
   .footer .site-nav-item a {
-    padding: 0 0 0 20px; }
+    padding: 10px; }
     .footer .site-nav-item a:hover {
       background: none;
       color: #dd4a38; }
+  .footer .button-square {
+    color: #c9c9c9;
+    background: none;
+    padding: 5px; }
   .footer .button-square:hover {
-    background: #dd4a38; }
+    color: #dd4a38;
+    background: none; }
   .footer .button-jump-top {
     font-size: 23px;
     line-height: 1.1;

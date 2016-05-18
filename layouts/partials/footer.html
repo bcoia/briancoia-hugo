@@ -7,37 +7,12 @@
                     <h1 class="site-title left">
                         <a title="{{ .Site.Title }}" href="{{ .Site.BaseURL }}" class="left">{{ .Site.Title }}</a>
                     </h1>
-                    <div class="right">
-                        <a class="button-square" href="{{ .Site.BaseURL }}index.xml"><i class="fa fa-fw fa-rss"></i></a>
-                        {{ with .Site.Params.twitter }}
-                            <a class="button-square button-social hint--top" data-hint="Twitter" title="Twitter" href="{{ . }}">
-                                <i class="fa fa-fw fa-twitter"></i>
-                            </a>
-                        {{ end }}
-                        {{ with .Site.Params.github }}
-                            <a class="button-square button-social hint--top" data-hint="Github" title="Github" href="{{ . }}">
-                                <i class="fa fa-fw fa-github-alt"></i>
-                            </a>
-                        {{ end }}
-                        {{ with .Site.Params.stackoverflow }}
-                            <a class="button-square button-social hint--top" data-hint="Stack Overflow" title="Stack Overflow" href="{{ . }}">
-                                <i class="fa fa-fw fa-stack-overflow"></i>
-                            </a>
-                        {{ end }}
-                        {{ with .Site.Params.linkedin }}
-                            <a class="button-square button-social hint--top" data-hint="LinkedIn" title="LinkedIn" href="{{ . }}">
-                                <i class="fa fa-fw fa-linkedin"></i>
-                            </a>
-                        {{ end }}
-                        {{ with .Site.Params.gplus }}
-                            <a class="button-square button-social hint--top" data-hint="Google+" title="Google+" href="{{ . }}">
-                                <i class="fa fa-fw fa-google-plus"></i>
-                            </a>
-                        {{ end }}
-                        <a class="button-square button-jump-top js-jump-top" href="#">
-                            <i class="fa fa-fw fa-angle-up"></i>
-                        </a>
-                    </div>
+                    <ul class="footer-links right">
+                        {{ partial "navigation.html" . }}
+                        <li class="site-nav-item">
+                            <a href="#">Top <i class="fa fa-fw fa-caret-up"></i></a>
+                        </li>
+                    </ul>
                 </div>
 
                 {{ with .Site.Params.footer }}
@@ -45,9 +20,33 @@
                         {{ . | safeHTML }}
                     </p>
                 {{ end }}
-
-                <div class="footer-links right">
-                    {{ partial "navigation.html" . }}
+                <div class="right">
+                    {{ with .Site.Params.twitter }}
+                        <a class="button-square button-social hint--top" data-hint="Twitter" title="Twitter" href="{{ . }}">
+                            <i class="fa fa-fw fa-twitter"></i>
+                        </a>
+                    {{ end }}
+                    {{ with .Site.Params.github }}
+                        <a class="button-square button-social hint--top" data-hint="Github" title="Github" href="{{ . }}">
+                            <i class="fa fa-fw fa-github-alt"></i>
+                        </a>
+                    {{ end }}
+                    {{ with .Site.Params.stackoverflow }}
+                        <a class="button-square button-social hint--top" data-hint="Stack Overflow" title="Stack Overflow" href="{{ . }}">
+                            <i class="fa fa-fw fa-stack-overflow"></i>
+                        </a>
+                    {{ end }}
+                    {{ with .Site.Params.linkedin }}
+                        <a class="button-square button-social hint--top" data-hint="LinkedIn" title="LinkedIn" href="{{ . }}">
+                            <i class="fa fa-fw fa-linkedin"></i>
+                        </a>
+                    {{ end }}
+                    {{ with .Site.Params.gplus }}
+                        <a class="button-square button-social hint--top" data-hint="Google+" title="Google+" href="{{ . }}">
+                            <i class="fa fa-fw fa-google-plus"></i>
+                        </a>
+                    {{ end }}
+                    <a class="button-square" href="{{ .Site.BaseURL }}index.xml"><i class="fa fa-fw fa-rss"></i></a>
                 </div>
 
                 <p class="footer-copyright">

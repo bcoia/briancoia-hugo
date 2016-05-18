@@ -2,27 +2,27 @@ baseurl = "https://briancoia.com/"
 title = "Brian Coia"
 copyright = "Brian Coia"
 languageCode = "en-us"
-metaDataFormat = "yaml"
 theme = "ghostwriter"
 
 disqusShortname = "briancoia"
 googleAnalytics = "UA-29421156-1"
 gravatarHash = "779fbbf06b0fe9ae605e266227387137"
 
-[Author]
+[author]
     name = "Brian Coia"
     email = "brian@briancoia.com"
     profile = "https://google.com/+briancoia"
 
-[Permalinks]
+[permalinks]
     page = "/:slug/"
     post = "/:year/:month/:day/:slug/"
     project = "/project/:slug/"
 
-[Taxonomies]
+[taxonomies]
     tag = "tags"
+    project = "projects"
 
-[Params]
+[params]
     intro = true
     headline = "Brian Coia"
     description = "Web developer, button pressing enthusiast"

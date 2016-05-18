@@ -171,7 +171,7 @@ table {
 #wrapper {
     background: $background;
     height: auto;
-    min-height: 100%;
+    min-height: 85%;
     /* This must be the same as the height of the footer */
     margin-bottom: -200px;
 
@@ -196,18 +196,17 @@ table {
 }
 
 .button-square {
-    background: $primary;    
-    color: #FFF;
-    float: left;
-    font-size: 17px;
-    margin: 0 0 0 10px;
-    padding: 3px 8px 4px;
+    background: $primary;
+    color: #FEFEFE;
+    font-size: 16px;
+    padding: 3px 8px;
 
     &:hover { background: $secondary; }
 }
 
 .error {
     text-align: center;
+    margin-top: 150px;
 }
 
 .comments {
@@ -553,7 +552,7 @@ table {
     }
 
     .site-nav-item a {
-        padding: 0 0 0 20px;
+        padding: 10px;
 
         &:hover {
             background: none;
@@ -561,8 +560,15 @@ table {
         }
     }
 
+    .button-square {
+        color: lighten($secondary, 60%);
+        background: none;
+        padding: 5px;
+    }
+
     .button-square:hover {
-        background: $primary;
+        color: $primary;
+        background: none;
     }
 
     .button-jump-top {
