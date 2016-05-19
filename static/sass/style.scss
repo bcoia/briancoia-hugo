@@ -173,7 +173,7 @@ table {
 #wrapper {
     background: $background;
     height: auto;
-    min-height: 85%;
+    min-height: 90%;
     /* This must be the same as the height of the footer */
     margin-bottom: -200px;
 
@@ -247,6 +247,14 @@ table {
         padding: 4px 10px;
     }
 }
+
+.random-header {
+    opacity: 0;
+    -webkit-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+}
+
 .site-logo {
     display: block;
 
@@ -292,6 +300,7 @@ table {
     font-size: 32px;
     font-weight: 600;
     margin: 0;
+    line-height: 1.2;
 }
 
 .page-title { margin: 15px 40px; }
