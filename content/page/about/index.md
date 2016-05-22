@@ -17,7 +17,8 @@ For fun, I manage game servers and stream myself playing games for the internet.
 
 My text editor of choice is [Sublime Text](https://www.sublimetext.com/3). I work on an [early 2015 13" retina MacBook Pro](http://www.everymac.com/systems/apple/macbook_pro/index-macbookpro.html). I watch streams, store media and backups, and run virtual machines on a [2012 Mac Mini server](http://www.everymac.com/systems/apple/mac_mini/specs/mac-mini-core-i7-2.3-late-2012-server-specs.html). I play PC games on a [custom i7 2700k/GTX 970 desktop](https://pcpartpicker.com/user/bcoia/saved/Gf6TwP). My current phone is a [space gray iPhone 6](http://www.everymac.com/systems/apple/iphone/specs/apple-iphone-6-a1549-4.7-inch-gsm-north-america-specs.html).
 
-## On Twitter:
+## Contact me:
 
-* [@bcoia](https://twitter.com/bcoia): For business inqueries and coding stuff.
+* [@bcoia](https://twitter.com/bcoia): For business inquiries and coding stuff.
 * [@redcoin](https://twitter.com/redcoin): If you have strong opinions about video games that you want to get off your chest.
+* [Email me](mailto:brian@briancoia.com): If you don't like Twitter.
