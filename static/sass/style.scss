@@ -219,6 +219,7 @@ table {
     border: 2px solid #452040;
     max-height: 200px;
     max-width: 200px;
+    margin: 10px;
 }
 
 /* ============================================================ */
@@ -541,6 +542,7 @@ table {
     min-height: 200px;
     margin-top: 95px;
     overflow: auto;
+    padding: 0 10px;
 
     .footer-description,
     .footer-links {
@@ -626,10 +628,7 @@ table {
 @media only screen and (max-width: 800px) {
     .post-stub-tag { display: none; }
 
-    .site-header {
-        padding-left: 40px;
-        padding-right: 40px;
-    }
+    .site-header { padding: 0 20px; }
 }
 
 @media only screen and (max-width: 600px) {

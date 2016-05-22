@@ -190,7 +190,8 @@ table {
 .avatar {
   border: 2px solid #452040;
   max-height: 200px;
-  max-width: 200px; }
+  max-width: 200px;
+  margin: 10px; }
 
 /* ============================================================ */
 /* Site Header */
@@ -467,7 +468,8 @@ table {
   color: #D3D3D3;
   min-height: 200px;
   margin-top: 95px;
-  overflow: auto; }
+  overflow: auto;
+  padding: 0 10px; }
   .footer .footer-description,
   .footer .footer-links {
     display: inline-block;
@@ -536,8 +538,7 @@ table {
     display: none; }
 
   .site-header {
-    padding-left: 40px;
-    padding-right: 40px; } }
+    padding: 0 20px; } }
 @media only screen and (max-width: 600px) {
   h1, h2 {
     margin-bottom: 20px; }
