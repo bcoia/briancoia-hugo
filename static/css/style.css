@@ -63,6 +63,12 @@ ul.footer-links {
   padding: 0;
   font-size: 0; }
 
+ul.site-nav {
+  list-style: none;
+  margin: 0;
+  padding: 3px 0 0 0;
+  overflow-y: hidden; }
+
 .post-content > ul > li {
   margin: 0 0 20px; }
 
@@ -229,10 +235,6 @@ table {
   display: block; }
   .site-logo img {
     margin: 0; }
-
-.site-nav {
-  list-style: none;
-  margin: 3px 0 0 0; }
 
 .site-nav-item {
   display: inline-block;
@@ -577,7 +579,6 @@ table {
   .page-title,
   .author-name,
   .author-heading {
-    font-size: 42px;
     margin-top: 5px; }
 
   .post-date,
@@ -641,7 +642,6 @@ table {
   .page-title,
   .author-name,
   .author-heading {
-    font-size: 30px;
     line-height: 1.2; }
 
   .post-date,
