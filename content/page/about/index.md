@@ -19,5 +19,5 @@ My text editor of choice is [Sublime Text](https://www.sublimetext.com/3). I wor
 
 ## On Twitter:
 
-* [@bcoia](https://twitter.com/bcoia): My professional account.
-* [@redcoin](https://twitter.com/redcoin): My casual account.
+* [@bcoia](https://twitter.com/bcoia): For business inqueries and coding stuff.
+* [@redcoin](https://twitter.com/redcoin): If you have strong opinions about video games that you want to get off your chest.
