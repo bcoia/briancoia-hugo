@@ -9,12 +9,13 @@
             </header>
         {{ end }}
 
-        <ol class="post-list">
-            {{ $pag := .Paginate (where .Data.Pages "Type" "post") }}
-            {{ range $pag.Pages }}
-                {{ partial "post-stub.html" . }}
-            {{ end }}
-        </ol>
+        {{ $pag := .Paginate (where .Data.Pages "Type" "post") }}
+        {{ range $pag.Pages }}
+            <div class="post-summary">
+            {{ partial "post-header.html" . }}
+            {{ partial "post-summary.html" . }}
+            </div>
+        {{ end }}
 
         <div class="post-navigation">
             {{ partial "pagination.html" . }}
