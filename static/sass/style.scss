@@ -332,11 +332,11 @@ table {
 .post-title a { color: #303030; }
 
 .link-title {
-    a {
-        color: $primary;
+    a { color: $primary; }
+    a:hover {
+        color: darken($primary, 10%);
         text-decoration: underline;
     }
-    a:hover { color: darken($primary, 10%); }
     &:after {
         font-size: 18px;
         color: #AAAAAA;

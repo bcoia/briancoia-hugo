@@ -288,10 +288,10 @@ table {
   color: #303030; }
 
 .link-title a {
-  color: #dd4a38;
-  text-decoration: underline; }
+  color: #dd4a38; }
 .link-title a:hover {
-  color: #c13221; }
+  color: #c13221;
+  text-decoration: underline; }
 .link-title:after {
   font-size: 18px;
   color: #AAAAAA;
