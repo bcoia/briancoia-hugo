@@ -162,6 +162,7 @@ table {
 
 #wrapper {
   background: #faf9f7;
+  border-top: 3px solid #dd4a38;
   height: auto;
   min-height: 95%;
   /* This must be the same as the height of the footer */
@@ -209,7 +210,6 @@ table {
 /* ============================================================ */
 .site-header {
   overflow: auto;
-  border-top: 3px solid #DD4A38;
   margin-bottom: 40px; }
 
 .site-title-wrapper {
@@ -244,7 +244,7 @@ table {
   .site-nav-item a {
     padding: 5px 10px; }
   .site-nav-item a:hover {
-    background: #DD4A38;
+    background: #dd4a38;
     color: #FEFEFE; }
 
 /* ============================================================ */
@@ -561,6 +561,59 @@ table {
   border-top-color: #dd4a38;
   border-left-color: #dd4a38; }
 
+/* ============================================================ */
+/* Two-column Layout */
+/* ============================================================ */
+@media only screen and (min-width: 1200px) {
+  .site-header {
+    position: fixed;
+    display: inline-block;
+    width: 300px;
+    height: 100%;
+    margin-top: -3px;
+    box-sizing: border-box;
+    float: left; }
+    .site-header .site-nav > .site-nav-item:not(:first-child) {
+      display: list-item;
+      margin: 10px 20px; }
+    .site-header .site-nav > .site-nav-item > .site-title {
+      font-size: 24px;
+      margin-left: 20px; }
+    .site-header .site-nav > .site-nav-item > .site-title a {
+      padding: 10px 10px 0px 10px; }
+    .site-header .site-nav > .site-nav-item:not(:first-child) a {
+      font-size: 16px;
+      display: block;
+      max-width: 95px;
+      padding: 10px 20px; }
+
+  #post-index {
+    padding-top: 20px;
+    margin: 0 5% 0 30%; }
+
+  .footer {
+    position: fixed;
+    display: inline-block;
+    width: 300px;
+    box-sizing: border-box;
+    float: left;
+    bottom: 0;
+    background: none;
+    padding: 0 20px; }
+    .footer .container {
+      position: absolute;
+      bottom: 0;
+      width: 260px; }
+    .footer .container > .site-title-wrapper {
+      display: none; }
+    .footer .footer-description, .footer .footer-links, .footer .footer-social, .footer .button-square {
+      color: #838383; }
+    .footer .footer-description a, .footer .footer-links a {
+      color: #636363; }
+    .footer .footer-social {
+      float: none;
+      text-align: center;
+      margin-top: 10px; } }
 /* ============================================================ */
 /* Media Queries */
 /* ============================================================ */

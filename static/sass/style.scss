@@ -185,6 +185,7 @@ table {
 
 #wrapper {
     background: $background;
+    border-top: 3px solid $primary;
     height: auto;
     min-height: 95%;
     /* This must be the same as the height of the footer */
@@ -241,7 +242,6 @@ table {
 
 .site-header {
     overflow: auto;
-    border-top: 3px solid #DD4A38;
     margin-bottom: 40px;
 }
 
@@ -286,7 +286,7 @@ table {
     }
 
     a:hover {
-        background: #DD4A38;
+        background: $primary;
         color: #FEFEFE;
     }
 }
@@ -655,6 +655,83 @@ table {
 #nprogress .spinner-icon {
     border-top-color: $primary;
     border-left-color: $primary;
+}
+
+/* ============================================================ */
+/* Two-column Layout */
+/* ============================================================ */
+
+@media only screen and (min-width: 1200px) {
+    .site-header {
+        position: fixed;
+        display: inline-block;
+        width: 300px;
+        height: 100%;
+        margin-top: -3px;
+        box-sizing: border-box;
+        float: left;
+
+        .site-nav > .site-nav-item:not(:first-child) {
+            display: list-item;
+            margin: 10px 20px;
+        }
+
+        .site-nav > .site-nav-item > .site-title {
+            font-size: 24px;
+            margin-left: 20px;
+        }
+
+        .site-nav > .site-nav-item > .site-title a {
+            padding: 10px 10px 0px 10px;
+        }
+
+        .site-nav > .site-nav-item:not(:first-child) a {
+            font-size: 16px;
+            display: block;
+            max-width: 95px;
+            padding: 10px 20px;
+        }
+    }
+
+    #post-index {
+        padding-top: 20px;
+        margin: 0 5% 0 30%;
+    }
+
+    .footer {
+        position: fixed;
+        display: inline-block;
+        width: 300px;
+        box-sizing: border-box;
+        float: left;
+        bottom: 0;
+        background: none;
+        padding: 0 20px;
+
+        .container {
+            position: absolute;
+            bottom: 0;
+            width: 260px;
+        }
+
+        .container > .site-title-wrapper {
+            display: none;
+        }
+
+        .footer-description, .footer-links, .footer-social, .button-square {
+            color: #838383;
+        }
+
+        .footer-description a, .footer-links a {
+            color: #636363;
+        }
+
+        .footer-social {
+            float: none;
+            text-align: center;
+            margin-top: 10px;
+        }
+    }
 }
 
 /* ============================================================ */
