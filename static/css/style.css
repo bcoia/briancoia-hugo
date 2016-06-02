@@ -587,8 +587,9 @@ table {
       max-width: 95px;
       padding: 10px 20px; }
     .site-header .site-sub-header {
-      margin: 10px 40px 20px;
-      font-weight: normal; }
+      margin: 10px 40px;
+      font-weight: normal;
+      height: 70px; }
 
   #post-index {
     margin: 40px 5% 0 30%; }
