@@ -691,11 +691,15 @@ table {
             max-width: 95px;
             padding: 10px 20px;
         }
+
+        .site-sub-header {
+            margin: 10px 40px 20px;
+            font-weight: normal;
+        }
     }
 
     #post-index {
-        padding-top: 20px;
-        margin: 0 5% 0 30%;
+        margin: 40px 5% 0 30%;
     }
 
     .footer {
@@ -732,6 +736,12 @@ table {
             margin-top: 10px;
         }
     }
+
+    .one-column-only { display: none; }
+}
+
+@media only screen and (max-width: 1199px) {
+    .two-column-only { display: none; }
 }
 
 /* ============================================================ */
