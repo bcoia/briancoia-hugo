@@ -1,3 +1,5 @@
 .sass-cache/
+deploy_rsa
+deploy_rsa.pub
 deploy.sh
 /public
