@@ -19,6 +19,6 @@ before_deploy:
 deploy:
   provider: script
   skip_cleanup: true
-  script: rsync -r --delete-after --quiet $TRAVIS_BUILD_DIR/public travis@briancoia.com:/var/www/briancoia.com
+  script: rsync -r --delete-after --quiet $TRAVIS_BUILD_DIR/public/ travis@briancoia.com:/var/www/briancoia.com
   on:
     branch: master
