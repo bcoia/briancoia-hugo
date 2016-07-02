@@ -26,7 +26,7 @@ gravatarHash = "779fbbf06b0fe9ae605e266227387137"
     intro = true
     headline = "Brian Coia"
     description = "Web developer, button pressing enthusiast"
-    footer = "I write code for <a href='http://www.fangamer.com'>Fangamer</a> and manage community game servers at <a href='https://redco.in'>Red Coin</a>. You can reach me on <a href='https://twitter.com/redcoin'>Twitter</a>, or via email at<br/><em>my first name</em> at <em>this domain</em>."
+    footer = "I write code for <a href='http://www.fangamer.com'>Fangamer</a> and manage community game servers at <a href='https://redco.in'>Red Coin</a>.<br/>You can reach me on <a href='https://twitter.com/redcoin'>Twitter</a>, or via email at<br/><em>my first name</em> at <em>this domain</em>."
     github = "https://github.com/bcoia"
     linkedin = "https://linkedin.com/in/bcoia/"
     gplus = "https://google.com/+briancoia"
