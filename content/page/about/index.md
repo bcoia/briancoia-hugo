@@ -11,7 +11,7 @@ Hi, I'm Brian!
 
 I've tinkered with computer hardware and software for most of my life. Since graduating with a Computer Science degree from University of Wisconsin-Parkside in 2014 (with a minor in Web Development), I dove headfirst into a career as a web developer. Technically, you could call me a 'full stack developer'. [I'd really prefer you don't](https://medium.com/swlh/the-full-stack-developer-is-a-myth-4e3fb9c25867#.4wb61hat3).
 
-I'm currently working at a small company as a web developer and occasional system admin. I'm focused on new Python/Flask projects, and support PHP legacy applications when necessary. When I'm not coding, I improve our server infrastructure, harden security, and deploy devops and intranet tools. I'm somewhat obsessed with making everything report to [Slack](https://slack.com).
+I'm currently working at a [Fangamer](http://www.fangamer.com) as a Web Developer. I work on the Shopify front-end and various intranet tools and applications, largely developed in Ruby.
 
 For fun, I manage game servers and stream myself playing games for the internet. I have been known to bring [the 'Mania](https://redco.in/tm) to popular gaming site [Giant Bomb](http://giantbomb.com). I play dumb games psuedo-competitively; for example, I am the [Fun and Games Champion of Ultimate Fighting Game Tournament 10](https://twitter.com/redcoin/status/576183007997886464). I occasionally stream on [Twitch](http://twitch.tv/redcoin).
 
