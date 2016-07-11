@@ -10,6 +10,8 @@ tags = ["games"]
 
 <!--more-->
 
+Another take, from a Twitter conversation discussing if it is a "bad game":
+
 {{< tweet 752248447328104448 >}}
 
-I've enjoyed my time with it, despite its glaring gameplay flaws (or rather, lack of gameplay). I'm curious to see its lasting appeal.
+Personally I've enjoyed my time with it, despite its glaring gameplay flaws (or rather, lack of gameplay). I'm curious to see its lasting appeal.
