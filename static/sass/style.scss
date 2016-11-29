@@ -288,9 +288,7 @@ table {
     font-weight: 600;
     margin-right: 10px;
 
-    a { 
-        padding: 5px 10px;
-    }
+    a { padding: 5px 10px; }
 
     a:hover {
         background: $primary-color;
@@ -675,7 +673,17 @@ table {
 @media only screen and (max-width: 800px) {
     .post-stub-tag { display: none; }
 
-    .site-header { padding: 0 20px; }
+    .site-header {
+        padding: 0 15px;
+
+        .site-nav {
+            padding: 3px 0 0 0;
+            .site-nav-item {
+                margin-right: 5px;
+                a { padding: 5px 8px; }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -759,6 +767,8 @@ table {
 
     .footer {
         .site-title { margin-bottom: 15px; }
+        .footer-links { padding-top: 15px; }
+        .site-nav-item { margin-right: 0; }
         .footer-social { padding: 10px 0; }
     }
 

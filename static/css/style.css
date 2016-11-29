@@ -575,7 +575,13 @@ table {
     display: none; }
 
   .site-header {
-    padding: 0 20px; } }
+    padding: 0 15px; }
+    .site-header .site-nav {
+      padding: 3px 0 0 0; }
+      .site-header .site-nav .site-nav-item {
+        margin-right: 5px; }
+        .site-header .site-nav .site-nav-item a {
+          padding: 5px 8px; } }
 @media only screen and (max-width: 600px) {
   h1, h2 {
     margin-bottom: 20px; }
@@ -652,6 +658,10 @@ table {
 
   .footer .site-title {
     margin-bottom: 15px; }
+  .footer .footer-links {
+    padding-top: 15px; }
+  .footer .site-nav-item {
+    margin-right: 0; }
   .footer .footer-social {
     padding: 10px 0; }
 
