@@ -1,5 +1,8 @@
 @charset "UTF-8";
 /* ============================================================ */
+/* Variables */
+/* ============================================================ */
+/* ============================================================ */
 /* Base */
 /* ============================================================ */
 html, body {
@@ -66,7 +69,7 @@ ul.footer-links {
 ul.site-nav {
   list-style: none;
   margin: 0;
-  padding: 3px 0 0 0;
+  padding: 3px 15px 0 15px;
   overflow-y: hidden; }
 
 .post-content > ul > li {
@@ -105,7 +108,7 @@ code {
 
 hr {
   border: none;
-  border-bottom: 1px dotted #303030;
+  border-bottom: 1px solid #303030;
   margin: 45px 0; }
 
 table {
@@ -120,7 +123,7 @@ table {
   table td {
     padding: 10px; }
   table tr {
-    border-bottom: 1px dotted #777777; }
+    border-bottom: 1px solid #777777; }
 
 ::selection {
   background: #f3c1bb;
@@ -164,19 +167,19 @@ table {
   background: #faf9f7;
   height: auto;
   min-height: 95%;
-  /* This must be the same as the height of the footer */
-  margin-bottom: -200px; }
+  margin-bottom: -180px; }
   #wrapper:after {
     content: "";
     display: block;
-    /* This must be the same as the height of the footer */
-    height: 200px; }
+    height: 180px; }
+  #wrapper #container {
+    padding-bottom: 40px; }
 
 .button {
   background: #303030;
   border: none;
   border-radius: 3px;
-  color: #FEFEFE;
+  color: #fefefe;
   font-size: 14px;
   font-weight: 600;
   padding: 10px 12px; }
@@ -185,7 +188,7 @@ table {
 
 .button-square {
   background: #dd4a38;
-  color: #FEFEFE;
+  color: #fefefe;
   font-size: 16px;
   padding: 3px 8px; }
   .button-square:hover {
@@ -209,7 +212,7 @@ table {
 /* ============================================================ */
 .site-header {
   overflow: auto;
-  border-top: 3px solid #DD4A38;
+  border-top: 3px solid #dd4a38;
   margin-bottom: 40px; }
 
 .site-title-wrapper {
@@ -222,7 +225,7 @@ table {
   margin: 0px 10px 0px 0px; }
   .site-title a {
     background: #dd4a38;
-    color: #FEFEFE;
+    color: #fefefe;
     padding: 4px 10px; }
 
 .random-header {
@@ -244,8 +247,8 @@ table {
   .site-nav-item a {
     padding: 5px 10px; }
   .site-nav-item a:hover {
-    background: #DD4A38;
-    color: #FEFEFE; }
+    background: #dd4a38;
+    color: #fefefe; }
 
 /* ============================================================ */
 /* Post */
@@ -358,14 +361,13 @@ table {
     background: #303030; }
 
 .post-navigation {
-  display: table;
-  margin: 70px auto 100px; }
+  display: table; }
 
 .newer-posts,
 .older-posts {
   float: left;
   background: #dd4a38;
-  color: #FEFEFE;
+  color: #fefefe;
   font-size: 14px;
   font-weight: 600;
   margin: 0 5px;
@@ -497,10 +499,12 @@ table {
 .footer {
   background: #303030;
   color: #D3D3D3;
-  min-height: 200px;
-  margin-top: 20px;
+  min-height: 180px;
   overflow: auto;
-  padding: 0 10px; }
+  padding: 0 10px;
+  border-top: 3px solid #dd4a38; }
+  .footer .footer-container {
+    padding: 0 15px; }
   .footer .footer-description,
   .footer .footer-links {
     display: inline-block;
@@ -515,10 +519,12 @@ table {
       .footer .footer-description a:hover,
       .footer .footer-links a:hover {
         color: #dd4a38; }
+  .footer .footer-links {
+    padding-top: 5px; }
   .footer .footer-social {
     padding: 0 20px; }
   .footer .site-title-wrapper {
-    margin: 20px 0 15px;
+    margin: 0 0 15px 0;
     width: 100%; }
   .footer .site-nav-item a {
     padding: 10px; }

@@ -1,10 +1,15 @@
-// ============================================================ //
-// Colours //
-// ============================================================ //
+/* ============================================================ */
+/* Variables */
+/* ============================================================ */
 
-$primary: #DD4A38;
-$secondary: #303030;
-$background: #FAF9F7;
+$primary-color: #DD4A38;
+$secondary-color: #303030;
+$background-color: #FAF9F7;
+$text-color: #424242;
+$border-color: #EEEEEE;
+$button-text-color: #FEFEFE;
+
+$footer-height: 180px;
 
 /* ============================================================ */
 /* Base */
@@ -13,8 +18,8 @@ $background: #FAF9F7;
 html, body { height: 100%; }
 
 body {
-    background: $secondary;
-    color: #424242;
+    background: $secondary-color;
+    color: $text-color;
     font-family: 'Avenir Next', 'HelveticaNeue-Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 18px;
 }
@@ -36,7 +41,7 @@ p {
 }
 
 a {
-    color: $primary;
+    color: $primary-color;
     text-decoration: none;
     -webkit-transition: all 0.1s linear;
     -moz-transition: all 0.1s linear;
@@ -66,7 +71,7 @@ ul.footer-links {
 ul.site-nav {
     list-style: none;
     margin: 0;
-    padding: 3px 0 0 0;
+    padding: 3px 15px 0 15px;
     overflow-y: hidden;
 }
 
@@ -75,7 +80,7 @@ ul.site-nav {
 }
 
 blockquote {
-    border-left: 1px dotted $primary;
+    border-left: 1px dotted $primary-color;
     margin: 40px 0;
     padding: 5px 30px;
 
@@ -106,14 +111,14 @@ pre {
 code {
     padding: 2px 4px;
     font-size: 90%;
-    color: $primary;
+    color: $primary-color;
     background-color: #F1F0EA;
     border-radius: 4px
 }
 
 hr {
     border: none;
-    border-bottom: 1px dotted #303030;
+    border-bottom: 1px solid #303030;
     margin: 45px 0;
 }
 
@@ -133,17 +138,17 @@ table {
 
     td { padding: 10px; }
 
-    tr { border-bottom: 1px dotted #777777; }
+    tr { border-bottom: 1px solid #777777; }
 }
 
 ::selection {
-    background: lighten($primary, 30%);
+    background: lighten($primary-color, 30%);
     color: #000000;
     display: block;
 }
 
 ::-moz-selection {
-    background: lighten($primary, 30%);
+    background: lighten($primary-color, 30%);
     color: #000000;
     display: block;
 }
@@ -184,39 +189,41 @@ table {
 }
 
 #wrapper {
-    background: $background;
+    background: $background-color;
     height: auto;
     min-height: 95%;
-    /* This must be the same as the height of the footer */
-    margin-bottom: -200px;
+    margin-bottom: -$footer-height;
 
     &:after {
         content: "";
         display: block;
-        /* This must be the same as the height of the footer */
-        height: 200px;
+        height: $footer-height;
+    }
+
+    #container {
+        padding-bottom: 40px;
     }
 }
 
 .button {
-    background: $secondary;
+    background: $secondary-color;
     border: none;
     border-radius: 3px;
-    color: #FEFEFE;
+    color: $button-text-color;
     font-size: 14px;
     font-weight: 600;
     padding: 10px 12px;
 
-    &:hover { background: $primary; }
+    &:hover { background: $primary-color; }
 }
 
 .button-square {
-    background: $primary;
-    color: #FEFEFE;
+    background: $primary-color;
+    color: $button-text-color;
     font-size: 16px;
     padding: 3px 8px;
 
-    &:hover { background: $secondary; }
+    &:hover { background: $secondary-color; }
 }
 
 .error {
@@ -241,7 +248,7 @@ table {
 
 .site-header {
     overflow: auto;
-    border-top: 3px solid #DD4A38;
+    border-top: 3px solid $primary-color;
     margin-bottom: 40px;
 }
 
@@ -256,8 +263,8 @@ table {
     margin: 0px 10px 0px 0px;
 
     a {
-        background: $primary;
-        color: #FEFEFE;
+        background: $primary-color;
+        color: $button-text-color;
         padding: 4px 10px;
     }
 }
@@ -286,8 +293,8 @@ table {
     }
 
     a:hover {
-        background: #DD4A38;
-        color: #FEFEFE;
+        background: $primary-color;
+        color: $button-text-color;
     }
 }
 
@@ -332,9 +339,9 @@ table {
 .post-title a { color: #303030; }
 
 .link-title {
-    a { color: $primary; }
+    a { color: $primary-color; }
     a:hover {
-        color: darken($primary, 10%);
+        color: darken($primary-color, 10%);
         text-decoration: underline;
     }
     &:after {
@@ -364,12 +371,12 @@ table {
     line-height: 1;
 
     a { color: #777777; }
-    a:hover { color: $primary; }
+    a:hover { color: $primary-color; }
 }
 
 .post-content {
     a:hover {
-        color: darken($primary, 10%);
+        color: darken($primary-color, 10%);
         text-decoration: underline;
     }
 
@@ -389,14 +396,14 @@ table {
 .post-tags {
     float: left;
     margin: 3px 0 0;
-    a:hover { color: $secondary; }
+    a:hover { color: $secondary-color; }
 }
 
 .share {
     float: right;
 
     a {
-        background: $primary;
+        background: $primary-color;
         color: #FFF;
         display: inline-block;
         font-size: 16px;
@@ -406,26 +413,26 @@ table {
         text-align: center;
     }
 
-    a:hover { background: $secondary; }
+    a:hover { background: $secondary-color; }
 }
 
 .post-navigation {
     display: table;
-    margin: 70px auto 100px;
+    // margin: 70px auto 100px;
 }
 
 .newer-posts,
 .older-posts {
     float: left;
-    background: $primary;
-    color: #FEFEFE;
+    background: $primary-color;
+    color: $button-text-color;
     font-size: 14px;
     font-weight: 600;
     margin: 0 5px;
     padding: 5px 10px 6px;
 
     &:hover {
-        background: $secondary;
+        background: $secondary-color;
     }
 }
 
@@ -458,21 +465,21 @@ table {
 
     a {
         display: block;
-        color: #424242;
+        color: $text-color;
         padding: 10px 5px;
 
         &:hover {
             background: #FCF5F5;
-            color: $primary;
+            color: $primary-color;
             padding: 10px 8px;
 
-            .post-stub-tag { background: $primary; }
+            .post-stub-tag { background: $primary-color; }
         }
     }
 }
 
 .post-stub-tag {
-    background: $secondary;
+    background: $secondary-color;
     border-radius: 3px;
     color: #FFF;
     float: right;
@@ -512,7 +519,7 @@ table {
     margin: 0 40px;
 
     &:after {
-        border-bottom: 1px dotted $secondary;
+        border-bottom: 1px dotted $secondary-color;
         content: "";
         display: block;
         margin: 40px auto 0;
@@ -559,7 +566,7 @@ table {
     i { margin-right: 8px; }
 
     a { color: #777777; }
-    a:hover { color: $primary; }
+    a:hover { color: $primary-color; }
 }
 
 .author-bio {
@@ -573,33 +580,37 @@ table {
 /* ============================================================ */
 
 .footer {
-    background: $secondary;
+    background: $secondary-color;
     color: #D3D3D3;
-    min-height: 200px;
-    margin-top: 20px;
+    min-height: $footer-height;
     overflow: auto;
     padding: 0 10px;
+    border-top: 3px solid $primary-color;
+
+    .footer-container { padding: 0 15px; }
 
     .footer-description,
     .footer-links {
         display: inline-block;
-        color: lighten($secondary, 40%);
+        color: lighten($secondary-color, 40%);
         font-size: 14px;
         max-width: 350px;
         margin: 0;
         line-height: 1.5;
 
         a {
-            color: lighten($secondary, 60%);
+            color: lighten($secondary-color, 60%);
 
-            &:hover { color: $primary; }
+            &:hover { color: $primary-color; }
         }
     }
+
+    .footer-links { padding-top: 5px; }
 
     .footer-social { padding: 0 20px; }
 
     .site-title-wrapper {
-        margin: 20px 0 15px;
+        margin: 0 0 15px 0;
         width: 100%;
     }
 
@@ -608,18 +619,18 @@ table {
 
         &:hover {
             background: none;
-            color: $primary;
+            color: $primary-color;
         }
     }
 
     .button-square {
-        color: lighten($secondary, 60%);
+        color: lighten($secondary-color, 60%);
         background: none;
         padding: 5px;
     }
 
     .button-square:hover {
-        color: $primary;
+        color: $primary-color;
         background: none;
     }
 
@@ -631,16 +642,16 @@ table {
 }
 
 .footer-copyright {
-    color: lighten($secondary, 20%);
+    color: lighten($secondary-color, 20%);
     font-size: 14px;
     margin: 10px 0;
     text-align: center;
 
     a {
-        color: lighten($secondary, 30%);
+        color: lighten($secondary-color, 30%);
         font-weight: 600;
 
-        &:hover { color: $primary; }
+        &:hover { color: $primary-color; }
     }
 }
 
@@ -648,13 +659,13 @@ table {
 /* NProgress */
 /* ============================================================ */
 
-#nprogress .bar { background: $primary; }
+#nprogress .bar { background: $primary-color; }
 
-#nprogress .peg { box-shadow: 0 0 10px $primary, 0 0 5px $primary; }
+#nprogress .peg { box-shadow: 0 0 10px $primary-color, 0 0 5px $primary-color; }
 
 #nprogress .spinner-icon {
-    border-top-color: $primary;
-    border-left-color: $primary;
+    border-top-color: $primary-color;
+    border-left-color: $primary-color;
 }
 
 /* ============================================================ */

@@ -3,55 +3,57 @@
 
         <footer class="footer">
             <div class="container">
-                <div class="site-title-wrapper">
-                    <span class="site-title left">
-                        <a title="{{ .Site.Title }}" href="{{ .Site.BaseURL }}" class="left">{{ .Site.Title }}</a>
-                    </span>
-                    <ul class="footer-links right">
-                        {{ partial "navigation.html" . }}
-                        <li class="site-nav-item">
-                            <a href="#">Top <i class="fa fa-fw fa-caret-up"></i></a>
-                        </li>
-                    </ul>
-                </div>
+                <div class="footer-container">
+                    <div class="site-title-wrapper">
+                        <span class="site-title left">
+                            <a title="{{ .Site.Title }}" href="{{ .Site.BaseURL }}" class="left">{{ .Site.Title }}</a>
+                        </span>
+                        <ul class="footer-links right">
+                            {{ partial "navigation.html" . }}
+                            <li class="site-nav-item">
+                                <a href="#">Top <i class="fa fa-fw fa-caret-up"></i></a>
+                            </li>
+                        </ul>
+                    </div>
 
-                {{ with .Site.Params.footer }}
-                    <p class="footer-description">
-                        {{ . | safeHTML }}
+                    {{ with .Site.Params.footer }}
+                        <p class="footer-description">
+                            {{ . | safeHTML }}
+                        </p>
+                    {{ end }}
+                    <div class="footer-social right">
+                        {{ with .Site.Params.twitter }}
+                            <a class="button-square button-social hint--top" data-hint="Twitter" title="Twitter" href="{{ . }}">
+                                <i class="fa fa-fw fa-twitter"></i>
+                            </a>
+                        {{ end }}
+                        {{ with .Site.Params.github }}
+                            <a class="button-square button-social hint--top" data-hint="Github" title="Github" href="{{ . }}">
+                                <i class="fa fa-fw fa-github-alt"></i>
+                            </a>
+                        {{ end }}
+                        {{ with .Site.Params.stackoverflow }}
+                            <a class="button-square button-social hint--top" data-hint="Stack Overflow" title="Stack Overflow" href="{{ . }}">
+                                <i class="fa fa-fw fa-stack-overflow"></i>
+                            </a>
+                        {{ end }}
+                        {{ with .Site.Params.linkedin }}
+                            <a class="button-square button-social hint--top" data-hint="LinkedIn" title="LinkedIn" href="{{ . }}">
+                                <i class="fa fa-fw fa-linkedin"></i>
+                            </a>
+                        {{ end }}
+                        {{ with .Site.Params.gplus }}
+                            <a class="button-square button-social hint--top" data-hint="Google+" title="Google+" href="{{ . }}">
+                                <i class="fa fa-fw fa-google-plus"></i>
+                            </a>
+                        {{ end }}
+                        <a class="button-square" href="{{ .Site.BaseURL }}index.xml"><i class="fa fa-fw fa-rss"></i></a>
+                    </div>
+
+                    <p class="footer-copyright">
+                        <span>&copy; {{ .Site.LastChange.Format "2006" }} {{ .Site.Copyright }} / Powered by <a href="http://gohugo.io/">Hugo</a></span>
                     </p>
-                {{ end }}
-                <div class="footer-social right">
-                    {{ with .Site.Params.twitter }}
-                        <a class="button-square button-social hint--top" data-hint="Twitter" title="Twitter" href="{{ . }}">
-                            <i class="fa fa-fw fa-twitter"></i>
-                        </a>
-                    {{ end }}
-                    {{ with .Site.Params.github }}
-                        <a class="button-square button-social hint--top" data-hint="Github" title="Github" href="{{ . }}">
-                            <i class="fa fa-fw fa-github-alt"></i>
-                        </a>
-                    {{ end }}
-                    {{ with .Site.Params.stackoverflow }}
-                        <a class="button-square button-social hint--top" data-hint="Stack Overflow" title="Stack Overflow" href="{{ . }}">
-                            <i class="fa fa-fw fa-stack-overflow"></i>
-                        </a>
-                    {{ end }}
-                    {{ with .Site.Params.linkedin }}
-                        <a class="button-square button-social hint--top" data-hint="LinkedIn" title="LinkedIn" href="{{ . }}">
-                            <i class="fa fa-fw fa-linkedin"></i>
-                        </a>
-                    {{ end }}
-                    {{ with .Site.Params.gplus }}
-                        <a class="button-square button-social hint--top" data-hint="Google+" title="Google+" href="{{ . }}">
-                            <i class="fa fa-fw fa-google-plus"></i>
-                        </a>
-                    {{ end }}
-                    <a class="button-square" href="{{ .Site.BaseURL }}index.xml"><i class="fa fa-fw fa-rss"></i></a>
                 </div>
-
-                <p class="footer-copyright">
-                    <span>&copy; {{ .Site.LastChange.Format "2006" }} {{ .Site.Copyright }} / Powered by <a href="http://gohugo.io/">Hugo</a></span>
-                </p>
             </div>
         </footer>
 
