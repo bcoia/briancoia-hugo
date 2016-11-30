@@ -7,9 +7,7 @@ tags = ["streaming"]
 
 Streaming with remote commentators sucks.
 
-Due to the nature of the internet and video compression, most streaming services have a 10-30 second delay. While unnoticeable to viewers in non-interactive streams, this delay ruins interactivity between viewers and streamers. It also complicates remote commentary over voice chat services like Skype or Mumble.
-
-<!--more-->
+Due to the nature of the internet and video compression, most streaming services have a 10-30 second delay. While unnoticeable to viewers in non-interactive streams, this delay ruins interactivity between viewers and streamers. It also complicates remote commentary over voice chat services like Skype or Mumble.<!--more-->
 
 ## The "Solution"
 
