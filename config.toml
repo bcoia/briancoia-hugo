@@ -2,7 +2,6 @@ baseurl = "https://briancoia.com/"
 title = "Brian Coia"
 copyright = "Brian Coia"
 languageCode = "en-us"
-theme = "ghostwriter"
 
 disqusShortname = "briancoia"
 googleAnalytics = "UA-29421156-1"
