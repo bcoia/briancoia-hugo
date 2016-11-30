@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>{{ .Title }}{{ if ne .Title .Site.Author.name }} &middot; {{ .Site.Author.name }}{{ end }}</title>
+        <title>{{ if eq .URL "/blog/" }}Blog{{ else }}{{ .Title }}{{ end }}{{ if ne .Title .Site.Author.name }} &middot; {{ .Site.Author.name }}{{ end }}</title>
         <meta name="description" content="{{ if ne .Description "" }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
         <meta name="HandheldFriendly" content="True">
         <meta name="MobileOptimized" content="320">
@@ -15,6 +15,8 @@
         <link rel="stylesheet" href="{{ .Site.BaseURL }}css/highlight.css">
         <link rel="stylesheet" href="{{ .Site.BaseURL }}css/style.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+        <link href="{{ .Site.BaseURL }}blog/index.xml" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+        <link href="{{ .Site.BaseURL }}blog/index.xml" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
     </head>
     <body>
         {{ template "_internal/google_analytics.html" . }}
@@ -28,7 +30,7 @@
                                 <img src="{{ . }}" alt="{{ .Title }}" />
                             </a>
                         {{ else }}
-                            
+
                         {{ end }}
                     </div>
 

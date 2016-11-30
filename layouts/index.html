@@ -9,11 +9,10 @@
             </header>
         {{ end }}
 
-        {{ $pag := .Paginate (where .Data.Pages "Type" "post") }}
+        {{ $pag := .Paginate (where .Data.Pages "Type" "blog") }}
         {{ range $pag.Pages }}
             <div class="post-summary">
-            {{ partial "post-header.html" . }}
-            {{ partial "post-summary.html" . }}
+            {{ .Render "summary" }}
             </div>
         {{ end }}
 
