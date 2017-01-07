@@ -12,8 +12,8 @@ before_script:
 - cd $GOPATH/src/github.com/spf13/hugo && govendor sync && go install
 - gem install sass
 script:
-- sass static/sass/style.scss static/css/style.css
 - cd $HOME/gopath/src/github.com/bcoia/briancoia.com && hugo
+- sass static/sass/style.scss static/css/style.css
 before_deploy:
 - eval "$(ssh-agent -s)"
 - chmod 600 $TRAVIS_BUILD_DIR/deploy_rsa
