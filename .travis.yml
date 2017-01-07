@@ -13,7 +13,7 @@ before_script:
 - gem install sass
 script:
 - sass static/sass/style.scss static/css/style.css
-- cd $HOME/gopath/src/github.com/YourBlogName/YourBlogName.github.io && hugo
+- cd $HOME/gopath/src/github.com/bcoia/briancoia.com && hugo
 before_deploy:
 - eval "$(ssh-agent -s)"
 - chmod 600 $TRAVIS_BUILD_DIR/deploy_rsa
