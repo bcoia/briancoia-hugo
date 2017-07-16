@@ -8,9 +8,10 @@ before_install:
   -in deploy_rsa.enc -out deploy_rsa -d
 before_script:
 - go get -u -v github.com/spf13/hugo
+- gem install sass
 script:
-- hugo
 - sass static/sass/style.scss static/css/style.css
+- hugo
 before_deploy:
 - eval "$(ssh-agent -s)"
 - chmod 600 $TRAVIS_BUILD_DIR/deploy_rsa
