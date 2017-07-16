@@ -1,8 +1,8 @@
 <header class="post-header">
     {{ if .Params.link }}
-    <h1 class="post-title link-title" itemprop="name headline"><a href="{{ .Params.link }}">{{ .Title }}</a></h1>
+    <h2 class="post-title link-title" itemprop="name headline"><a href="{{ .Params.link }}">{{ .Title }}</a></h2>
     {{ else }}
-    <h1 class="post-title" itemprop="name headline"><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+    <h2 class="post-title" itemprop="name headline"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
     {{ end }}
     <time class="post-date" datetime="{{ .Date.Format "2006-01-02" }}" itemprop="datePublished">{{ .Date.Format "January 2, 2006" }}</time>
     <a href="{{ .Permalink }}">∞</a>
