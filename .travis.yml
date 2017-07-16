@@ -9,8 +9,8 @@ before_install:
 before_script:
 - go get -u -v github.com/spf13/hugo
 script:
-- sass static/sass/style.scss static/css/style.css
 - hugo
+- sass static/sass/style.scss static/css/style.css
 before_deploy:
 - eval "$(ssh-agent -s)"
 - chmod 600 $TRAVIS_BUILD_DIR/deploy_rsa
