@@ -1,8 +1,6 @@
 language: go
 go:
 - 1.8.3
-rvm:
-- 2.2
 addons:
   ssh_known_hosts: briancoia.com
 before_install:
@@ -10,7 +8,7 @@ before_install:
   -in deploy_rsa.enc -out deploy_rsa -d
 before_script:
 - go get -u -v github.com/spf13/hugo
-- gem install sass
+- gem install sass -v 3.4.25
 script:
 - sass static/sass/style.scss static/css/style.css
 - hugo
