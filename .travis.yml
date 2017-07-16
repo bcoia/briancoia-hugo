@@ -1,6 +1,8 @@
 language: go
 go:
 - 1.8.3
+rvm:
+- 2.2
 addons:
   ssh_known_hosts: briancoia.com
 before_install:
